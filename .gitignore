@@ -214,3 +214,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Additional files and folders to ignore
+logs/
+docs/local/
+copilot-instructions.md
