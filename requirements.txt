@@ -1,0 +1,29 @@
+# Core Data Science Libraries
+pandas
+numpy
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Statistical Analysis & Forecasting
+scipy
+statsmodels
+scikit-learn
+
+# Dashboard
+streamlit
+
+# Utilities
+openpyxl
+python-dateutil
+
+# Testing
+pytest
+pytest-cov
+
+# Code Quality
+black
+flake8
+mypy

@@ -219,3 +219,5 @@ __marimo__/
 logs/
 docs/local/
 copilot-instructions.md
+!data/.gitkeep
+data/
