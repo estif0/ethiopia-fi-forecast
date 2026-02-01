@@ -69,7 +69,7 @@ def add_observations(enricher: DataEnricher):
         source_name="GSMA Intelligence 2024",
         source_url="https://www.gsma.com/mobileeconomy/",
         confidence="high",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         original_text="Ethiopia mobile penetration rate reached 58.5% in 2024",
         notes="Infrastructure indicator - correlates with financial inclusion potential",
     )
@@ -85,7 +85,7 @@ def add_observations(enricher: DataEnricher):
         source_name="GSMA Mobile Connectivity Index",
         source_url="https://www.gsma.com/mobilefordevelopment/connectivity/",
         confidence="medium",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         original_text="4G coverage reached 45% of population by end 2023",
         notes="Digital infrastructure enabler for mobile money services",
     )
@@ -101,7 +101,7 @@ def add_observations(enricher: DataEnricher):
         source_name="Global Findex 2024 Microdata",
         source_url="https://microdata.worldbank.org/index.php/catalog/findex",
         confidence="high",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         original_text="Gender gap in account ownership is 12 percentage points (Male 55%, Female 43%)",
         notes="Critical disparity indicator - affects overall inclusion forecasts",
     )
@@ -117,7 +117,7 @@ def add_observations(enricher: DataEnricher):
         source_name="Global Findex 2024 Microdata",
         source_url="https://microdata.worldbank.org/index.php/catalog/findex",
         confidence="high",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         original_text="Urban account ownership 62%, Rural 44% (18pp gap)",
         notes="Geographic disparity - important for targeted interventions",
     )
@@ -133,7 +133,7 @@ def add_observations(enricher: DataEnricher):
         source_name="Telebirr Q2 2024 Report",
         source_url="https://www.ethiotelecom.et/",
         confidence="medium",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         original_text="28.5 million active users (transacted in last 90 days)",
         notes="Shows registered vs active gap - only ~50% of registered accounts are active",
     )
@@ -149,7 +149,7 @@ def add_observations(enricher: DataEnricher):
         source_name="NBE Annual Report 2023",
         source_url="https://nbe.gov.et/annual-reports/",
         confidence="high",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         original_text="4,200 ATMs serving 110 million adults (3.8 per 100k)",
         notes="Traditional access channel - declining as mobile money grows",
     )
@@ -168,7 +168,7 @@ def add_events(enricher: DataEnricher):
         source_name="Ethiopian Communications Authority",
         source_url="https://www.eca.gov.et/",
         confidence="high",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         original_text="Safaricom consortium awarded telecom license for $850M",
         notes="Major market entry - expected to drive competition and innovation in mobile money",
     )
@@ -183,7 +183,7 @@ def add_events(enricher: DataEnricher):
         source_name="Safaricom Ethiopia Press Release",
         source_url="https://www.safaricom.et/",
         confidence="high",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         original_text="M-Pesa officially launched nationwide after pilot phase",
         notes="Second major mobile money player - creates competitive pressure on Telebirr",
     )
@@ -198,7 +198,7 @@ def add_events(enricher: DataEnricher):
         source_name="EthSwitch Press Release",
         source_url="https://ethswitch.com/",
         confidence="high",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         original_text="Landmark achievement in payment interoperability",
         notes="Game changer - P2P transactions now surpass ATM withdrawals",
     )
@@ -213,7 +213,7 @@ def add_events(enricher: DataEnricher):
         source_name="NBE Directive No. 112/2023",
         source_url="https://nbe.gov.et/directives/",
         confidence="high",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         original_text="Directive allows simplified KYC for accounts with transaction limits",
         notes="Reduces barriers to account opening - particularly for rural and unbanked populations",
     )
@@ -228,7 +228,7 @@ def add_events(enricher: DataEnricher):
         source_name="ID.gov.et",
         source_url="https://www.id.gov.et/",
         confidence="high",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         original_text="Plan to register 30M citizens by end of 2024",
         notes="Digital ID enables easier KYC and account opening",
     )
@@ -248,7 +248,7 @@ def add_impact_links(enricher: DataEnricher):
         lag_months=24,
         evidence_basis="comparable",
         confidence="medium",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         notes="Based on Kenya experience - competition drives inclusion",
     )
 
@@ -263,7 +263,7 @@ def add_impact_links(enricher: DataEnricher):
         lag_months=6,
         evidence_basis="observed",
         confidence="high",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         notes="Direct observable impact - M-Pesa gained 10M users within 6 months",
     )
 
@@ -277,7 +277,7 @@ def add_impact_links(enricher: DataEnricher):
         lag_months=12,
         evidence_basis="comparable",
         confidence="medium",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         notes="Expected to drive usage through competitive service offerings",
     )
 
@@ -292,7 +292,7 @@ def add_impact_links(enricher: DataEnricher):
         lag_months=3,
         evidence_basis="observed",
         confidence="high",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         notes="Immediate impact - P2P transactions surpassed ATM withdrawals by Q2 2023",
     )
 
@@ -307,7 +307,7 @@ def add_impact_links(enricher: DataEnricher):
         lag_months=6,
         evidence_basis="comparable",
         confidence="medium",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         notes="Similar regulatory changes in Tanzania and Kenya showed 5-8pp increase in 12 months",
     )
 
@@ -322,7 +322,7 @@ def add_impact_links(enricher: DataEnricher):
         lag_months=18,
         evidence_basis="estimated",
         confidence="low",
-        collected_by="AI Assistant",
+        collected_by="Estifanose Sahilu",
         notes="Long-term infrastructure effect - enables easier KYC but indirect impact",
     )
 
