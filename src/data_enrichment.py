@@ -400,7 +400,17 @@ class DataEnricher:
 
     def _validate_event_category(self, category: str) -> None:
         """Validate event category."""
-        valid_categories = ["policy", "product_launch", "infrastructure", "milestone"]
+        valid_categories = [
+            "policy",
+            "product_launch",
+            "infrastructure",
+            "milestone",
+            "market_entry",
+            "regulation",
+            "partnership",
+            "economic",
+            "pricing",
+        ]
         if category not in valid_categories:
             raise ValueError(
                 f"Invalid category: {category}. Must be one of: {valid_categories}"
