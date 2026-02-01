@@ -220,4 +220,5 @@ logs/
 docs/local/
 copilot-instructions.md
 !data/.gitkeep
-data/
+data/raw/*.csv
+data/processed/*.csv
