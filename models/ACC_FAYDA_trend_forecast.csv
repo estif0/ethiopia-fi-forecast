@@ -1,0 +1,4 @@
+year,indicator_code,forecast,lower_bound,upper_bound,trend_type,confidence_level
+2025,ACC_FAYDA,100.0,0.0,100.0,linear,0.95
+2026,ACC_FAYDA,100.0,0.0,100.0,linear,0.95
+2027,ACC_FAYDA,100.0,0.0,100.0,linear,0.95
