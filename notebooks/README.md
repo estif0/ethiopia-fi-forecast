@@ -166,16 +166,16 @@ See `src/README.md` for detailed API documentation.
 
 ---
 
-## Project Completion Status
+## Notebook Summary
 
-✅ **All Tasks Complete** (28/28 points)
+All analysis notebooks completed and fully executed:
 
-| Task       | Notebook                                   | Status     | Key Outputs                        |
-| ---------- | ------------------------------------------ | ---------- | ---------------------------------- |
-| **Task 1** | 01_task1_data_exploration_enrichment.ipynb | ✅ Complete | Enriched dataset (60 records)      |
-| **Task 2** | 02_task2_exploratory_data_analysis.ipynb   | ✅ Complete | 5+ insights, 7 visualizations      |
-| **Task 3** | 03_task3_impact_modeling.ipynb             | ✅ Complete | Event-indicator matrix, validation |
-| **Task 4** | 04_task4_forecasting.ipynb                 | ✅ Complete | 2025-2027 forecasts, scenarios     |
-| **Task 5** | N/A (Dashboard)                            | ✅ Complete | Interactive Streamlit app          |
+| Task       | Notebook                                   | Focus Area                      | Key Outputs                        |
+| ---------- | ------------------------------------------ | ------------------------------- | ---------------------------------- |
+| **Task 1** | 01_task1_data_exploration_enrichment.ipynb | Data understanding & enrichment | Enriched dataset (60 records)      |
+| **Task 2** | 02_task2_exploratory_data_analysis.ipynb   | Comprehensive EDA               | 5+ insights, 7 visualizations      |
+| **Task 3** | 03_task3_impact_modeling.ipynb             | Event impact quantification     | Event-indicator matrix, validation |
+| **Task 4** | 04_task4_forecasting.ipynb                 | Time series forecasting         | 2025-2027 forecasts, scenarios     |
+| **Task 5** | N/A (Dashboard)                            | Interactive visualization       | Streamlit web application          |
 
-**Next Steps**: Final submission and project documentation
+For detailed analysis methodology and results, see [reports/final_report.md](../reports/final_report.md)

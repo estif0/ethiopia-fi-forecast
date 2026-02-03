@@ -150,19 +150,9 @@ Despite 65M+ mobile money accounts opened (including Telebirr launch in May 2021
 
 ---
 
-## Project Completion
+## Project Overview
 
-✅ **All 5 Tasks Complete** (28/28 evaluation points)
-
-| Component                | Status     | Score     |
-| ------------------------ | ---------- | --------- |
-| Tasks 1 & 2 (Data & EDA) | ✅ Complete | 8/8       |
-| Task 3 (Impact Modeling) | ✅ Complete | 8/8       |
-| Task 4 (Forecasting)     | ✅ Complete | 8/8       |
-| Task 5 (Dashboard)       | ✅ Complete | 5/5       |
-| Git/GitHub (CI/CD)       | ✅ Complete | 4/4       |
-| Code Quality (Tests)     | ✅ Complete | 3/3       |
-| **Total**                |            | **28/28** |
+All analysis tasks completed with comprehensive documentation:
 
 ### Event Landscape
 - **Total Events**: 15 cataloged events
@@ -216,24 +206,14 @@ Despite 65M+ mobile money accounts opened (including Telebirr launch in May 2021
 
 ---
 
-## Implications for Next Steps
+## Additional Resources
 
-### Task 3: Event Impact Modeling
-- Focus on 2021-2024 events (Telebirr, M-Pesa, policy changes)
-- Model lag effects and impact magnitude
-- Validate against historical slowdown
-
-### Task 4: Forecasting (2025-2027)
-- **Base case**: Conservative growth reflecting recent slowdown
-- **Optimistic case**: Assume infrastructure enables usage growth
-- **Pessimistic case**: Continued stagnation despite account growth
-- **Wide confidence intervals**: Given data sparsity (±5-10pp reasonable)
-
-### Task 5: Dashboard
-- Visualize scenarios interactively
-- Show uncertainty ranges prominently
-- Document data limitations transparently
-- Provide event timeline context
+- **Final Report**: See [final_report.md](final_report.md) for comprehensive project analysis and recommendations
+- **Interim Report**: See `interim_report.md` for Tasks 1 & 2 summary
+- **Source Code**: Analysis modules in `../src/` directory
+- **Notebooks**: Detailed analysis in `../notebooks/` directory
+- **Dashboard**: Interactive exploration via `streamlit run ../dashboard/app.py`
+- **Model Outputs**: Forecast CSVs in `../models/` directory
 
 ---
 
