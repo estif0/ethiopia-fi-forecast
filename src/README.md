@@ -233,9 +233,114 @@ interactive_fig = viz.create_interactive_timeline(
 - Pillars: Access (blue), Usage (purple), Infrastructure (orange)
 - Events: product_launch (green), policy (blue), infrastructure (orange), milestone (red)
 
----
+### `impact_model.py`
+**ImpactModel class** - Model event impacts on financial inclusion indicators.
 
-## Development Guidelines
+**Usage:**
+```python
+from src.data_loader import DataLoader
+from src.impact_model import ImpactModel
+
+# Load data
+loader = DataLoader()
+data = loader.load_unified_data()
+
+# Initialize impact model
+model = ImpactModel(data)
+
+# Load and analyze impact links
+impact_links = model.load_impact_links()
+
+# Create event-indicator association matrix
+matrix = model.create_event_indicator_matrix()
+
+# Estimate impact for specific event-indicator pair
+impact = model.estimate_impact(
+    event_id='EVT001',
+    indicator_code='ACC_MM_ACCOUNT',
+    baseline_value=10.0,
+    observation_date='2022-01-01'
+)
+
+# Combine impacts from multiple events
+combined = model.combine_multiple_events(
+    event_ids=['EVT001', 'EVT002'],
+    indicator_code='ACC_OWNERSHIP',
+    baseline_value=35.0,
+    observation_date='2022-01-01'
+)
+
+# Get events affecting a specific indicator
+events = model.get_events_for_indicator('ACC_OWNERSHIP', min_magnitude=0.1)
+
+# Get indicators affected by a specific event
+indicators = model.get_indicators_for_event('EVT001')
+```
+
+**Key Methods:**
+- `load_impact_links()` - Load and parse impact relationship records
+- `create_event_indicator_matrix()` - Build event-indicator association matrix
+- `apply_lag_effects()` - Model temporal lag between event and impact
+- `estimate_impact()` - Calculate impact magnitude for event-indicator pair
+- `combine_multiple_events()` - Aggregate impacts from concurrent events
+- `get_events_for_indicator()` - Find events impacting an indicator
+- `get_indicators_for_event()` - Find indicators impacted by an event
+
+### `impact_validator.py`
+**ImpactValidator class** - Validate impact models against historical observations.
+
+**Usage:**
+```python
+from src.data_loader import DataLoader
+from src.impact_validator import ImpactValidator
+
+# Load data
+loader = DataLoader()
+data = loader.load_unified_data()
+
+observations = data[data['record_type'] == 'observation']
+events = data[data['record_type'] == 'event']
+impact_links = data[data['record_type'] == 'impact_link']
+
+# Initialize validator
+validator = ImpactValidator(observations, events, impact_links)
+
+# Validate specific event impact
+result = validator.validate_against_historical(
+    event_id='EVT001',
+    indicator_code='ACC_MM_ACCOUNT',
+    pre_period_end='2021-01-01',
+    post_period_end='2022-01-01'
+)
+
+# Calculate residuals
+residuals_df, summary = validator.calculate_residuals()
+
+# Generate validation report
+report = validator.generate_validation_report()
+print(report)
+
+# Batch validation
+pairs = [
+    ('EVT001', 'ACC_MM_ACCOUNT', '2021-01-01', '2022-01-01'),
+    ('EVT002', 'ACC_OWNERSHIP', '2020-01-01', '2022-01-01')
+]
+results_df = validator.validate_event_batch(pairs)
+
+# Compare predicted vs actual trends
+trend_comparison = validator.compare_predicted_actual_trends(
+    'ACC_OWNERSHIP',
+    start_date='2020-01-01',
+    end_date='2024-01-01'
+)
+```
+
+**Key Methods:**
+- `validate_against_historical()` - Compare predicted vs actual impact
+- `calculate_residuals()` - Measure prediction errors across validations
+- `generate_validation_report()` - Create formatted report
+- `validate_event_batch()` - Validate multiple event-indicator pairs
+- `compare_predicted_actual_trends()` - Compare overall trends
 
 - **Type Hints**: All functions use type hints
 - **Docstrings**: Google-style docstrings for all classes and methods

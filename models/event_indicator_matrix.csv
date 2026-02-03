@@ -1,0 +1,16 @@
+,ACC_OWNERSHIP,ACC_MM_ACCOUNT,ACC_4G_COV,ACC_MOBILE_PEN,ACC_FAYDA,USG_P2P_COUNT,USG_P2P_VALUE,USG_ATM_COUNT,USG_ATM_VALUE,USG_CROSSOVER,USG_TELEBIRR_USERS,USG_TELEBIRR_VALUE,USG_MPESA_USERS,USG_MPESA_ACTIVE,USG_ACTIVE_RATE,AFF_DATA_INCOME,GEN_GAP_ACC,GEN_MM_SHARE,GEN_GAP_MOBILE,INF_MOBILE_PENETRATION,INF_4G_COVERAGE,ACC_GENDER_GAP,ACC_URBAN_RURAL_GAP,USG_MM_ACTIVE_90D,INF_ATM_DENSITY,description,event_date,category
+EVT_0001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,product_launch
+EVT_0002,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,market_entry
+EVT_0003,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,product_launch
+EVT_0004,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,infrastructure
+EVT_0005,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,policy
+EVT_0006,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,milestone
+EVT_0007,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,partnership
+EVT_0008,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,infrastructure
+EVT_0009,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,policy
+EVT_0010,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,pricing
+EVT_SAFARICOM_LICENSE,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Ethiopian Communications Authority awards telecom license to Safaricom-led consortium,2021-05-22,market_entry
+EVT_MPESA_COMMERCIAL,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Safaricom Ethiopia launches M-Pesa mobile money service nationwide,2023-08-15,product_launch
+EVT_ETHSWITCH_P2P,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,EthSwitch enables interoperable P2P transfers between mobile money and bank accounts,2022-11-15,infrastructure
+EVT_KYC_RELAXATION,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,National Bank eases KYC requirements for basic mobile money accounts,2023-03-01,regulation
+EVT_FAYDA_ROLLOUT,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Government accelerates Fayda digital ID system deployment,2024-01-10,infrastructure
