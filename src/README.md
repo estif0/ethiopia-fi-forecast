@@ -2,6 +2,17 @@
 
 This directory contains modular, object-oriented Python code for the Ethiopia Financial Inclusion Forecasting project.
 
+## Modules Overview
+- **data_loader.py**: Load and validate datasets
+- **data_enrichment.py**: Add new records with validation
+- **data_processor.py**: Transform and aggregate data
+- **visualizations.py**: Create analysis visualizations
+- **impact_model.py**: Model event impacts on indicators
+- **impact_validator.py**: Validate impact models against historical data
+- **forecaster.py**: Generate forecasts with uncertainty quantification
+
+---
+
 ## Modules
 
 ### `data_loader.py`
@@ -341,6 +352,95 @@ trend_comparison = validator.compare_predicted_actual_trends(
 - `generate_validation_report()` - Create formatted report
 - `validate_event_batch()` - Validate multiple event-indicator pairs
 - `compare_predicted_actual_trends()` - Compare overall trends
+
+---
+
+### `forecaster.py`
+**FinancialInclusionForecaster class** - Generate forecasts for financial inclusion indicators using multiple methodologies.
+
+**Usage:**
+```python
+from src.data_loader import DataLoader
+from src.forecaster import FinancialInclusionForecaster
+
+# Load observations
+loader = DataLoader()
+observations = loader.get_observations()
+
+# Initialize forecaster
+forecaster = FinancialInclusionForecaster(observations)
+
+# Fit trend model
+model_info = forecaster.fit_trend_model(
+    'ACC_OWNERSHIP',
+    trend_type='linear'  # or 'polynomial', 'exponential'
+)
+
+# Generate forecast with confidence intervals
+forecast = forecaster.forecast_trend(
+    model_info,
+    forecast_years=[2025, 2026, 2027],
+    confidence_level=0.95
+)
+
+# Generate scenario forecasts
+scenarios = forecaster.generate_scenarios(
+    'ACC_OWNERSHIP',
+    forecast_years=[2025, 2026, 2027],
+    scenario_assumptions={
+        'optimistic_multiplier': 1.3,
+        'base_multiplier': 1.0,
+        'pessimistic_multiplier': 0.7
+    }
+)
+
+# Event-augmented forecasting
+events_data = loader.get_events()
+forecaster = FinancialInclusionForecaster(
+    observations,
+    events_data=events_data
+)
+
+base_forecast = forecaster.forecast_trend(model_info, [2025, 2026, 2027])
+future_events = events_data[events_data['event_date'] >= '2025-01-01']
+adjusted = forecaster.apply_event_adjustments(
+    base_forecast,
+    future_events,
+    adjustment_method='additive'
+)
+
+# Comprehensive forecast with multiple methods
+results = forecaster.forecast_with_uncertainty(
+    'ACC_OWNERSHIP',
+    forecast_years=[2025, 2026, 2027],
+    methods=['trend', 'scenarios']
+)
+
+# Get summary across methods
+summary = forecaster.get_forecast_summary('ACC_OWNERSHIP')
+
+# Export forecasts
+output_files = forecaster.export_forecasts(output_dir='models/')
+```
+
+**Key Methods:**
+- `fit_trend_model()` - Fit trend model (linear, polynomial, exponential)
+- `forecast_trend()` - Generate forecast with confidence intervals
+- `apply_event_adjustments()` - Adjust forecast based on anticipated events
+- `generate_scenarios()` - Create optimistic/base/pessimistic scenarios
+- `forecast_with_uncertainty()` - Comprehensive forecast with multiple methods
+- `get_forecast_summary()` - Summarize forecasts across methods
+- `export_forecasts()` - Save forecast results to CSV files
+
+**Supported Approaches:**
+- **Trend Regression**: Linear, polynomial, exponential extrapolation
+- **Event-Augmented**: Base trend + anticipated event impacts
+- **Scenario Analysis**: Multiple growth rate assumptions
+- **Uncertainty Quantification**: Confidence intervals using t-distribution
+
+---
+
+## Code Standards
 
 - **Type Hints**: All functions use type hints
 - **Docstrings**: Google-style docstrings for all classes and methods
